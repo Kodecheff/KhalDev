@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: whitesmoke;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* max-width: 1000px; */
+}
+
+.container{
+    /* border: 1px solid black; */
+    margin: 0 50px 0 50px;
+    background: white;
+    /* margin: auto; */
+}
+.nav-bar span h1{
+    float: left;
+    margin-left: 10px;
+}
+
+.nav-bar ul{
+    float: right;
+    list-style-type: none;
+    padding: 15px;
+}
+.nav-bar ul li{
+    display: inline;
+    margin-right: 30px;
+    font-size: 17px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(12, 12, 37);
+}
+.nav-bar ul li a:hover{
+    border-bottom: 1px solid rgb(12, 12, 37);
+    padding: 3px;
+}
+
+
+/* style for banner */
+.banner{
+    /* border: 1px solid grey; */
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+.banner img{
+    width: 100%;
+    height: 508px;
+    max-width: 906px;
+}
+.banner-content{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: white;
+    width: 300px;
+}
+.banner-content h3{
+    font-size: 35px;
+}
+.banner-content p{
+    font-size: 20px;
+}
+
+
+/* Style for body content */
+.body-content > .header{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.umbra-features{
+    margin: auto;
+    /* border: 1px solid red; */
+    padding-bottom: 80px;
+}
+.features{
+    width: 250px;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin-left: 20px;
+    padding: 13px;
+}
+.features span{
+    background: rgb(12, 12, 37);
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Style for about */
+
+.team fieldset{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.team fieldset legend{
+    text-align: center;
+    font-size: 25px;
+
+}
+.team fieldset legend p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.team .team-member{
+    display: inline-block;
+    padding: 1px;
+    margin-top: 50px;
+    margin-left: 20px;
+    border: 1px solid rgb(12, 12, 37);
+    width: 250px;
+    height: 200px;
+}
+.team .team-member img{
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+}
+.team .team-member h4{
+    text-align: center;
+}
+/****************************/
+
+
+
+/* Style for services */
+.services fieldset{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.services fieldset legend{
+    text-align: center;
+    font-size: 25px;
+
+}
+.services fieldset legend p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.graphic-design-service, .web-design-service, .web-dev-service, .ecommerce-service{
+    width: 250px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+/* Style for contact */
+.contact{
+    margin-top: 150px;
+}
+.contact fieldset{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.contact fieldset legend{
+    text-align: center;
+    font-size: 25px;
+
+}
+.contact fieldset legend p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.form{
+    float: right;
+}
+.form::after{
+    content: "";
+    clear: both;
+}
+input{
+    display: block;
+    padding: 5px;
+    font-style: italic;
+    margin: 10px;
+}
+textarea{
+    margin: 10px;
+}
+input[type=submit]{
+    background: rgb(12, 12, 37);
+    padding: 10px;
+    color: white;
+    border: outset rgb(12, 12, 37);
+    cursor: pointer;
+}
+
+
+/* Styel for footer */
+footer{
+    border-top: 1px solid slategray;
+    margin-top: 50px;
+}
+footer div{
+    margin-top: 60px;
+}
+footer p{
+    /* margin-top: 60px; */
+    text-align: center;
+}
+footer #top{
+    text-align: center;
+    border: 1px solid rgb(12, 12, 37);
+    background: rgb(12, 12, 37);
+    cursor: pointer;
+    margin: auto;
+    width: 120px;
+    padding: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
