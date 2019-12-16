@@ -38,9 +38,8 @@ background: url(img/slider-bg.jpg) no-repeat;
 background-size: cover;
 background-attachment: fixed;
 background-position: 10% 0%;
-padding: 200px 0 280px 0;
+padding: 180px 0 280px 0;
 position: relative;
-height: auto;
 }
 
 #slider #slider-content{
@@ -51,7 +50,7 @@ height: auto;
   color: rgb(8, 3, 65);
   margin-right: 30px;
   margin-left: 30px;
-  width: 250px;
+  height: 300px;
 }
 #slider:before {
 content: "";
@@ -80,7 +79,6 @@ line-height: 40px;
 font-family: 'Roboto', sans-serif;
 font-weight: 300;
 letter-spacing: 3px;
-margin-left: 45px;
 }
 
 
@@ -278,4 +276,12 @@ ul.nav li{
   text-decoration: underline;
 }
 
+}
+@media only screen and (max-width: 480px){
+  #slider{
+    padding: 100px 0;
+  }
+  #slider #slider-content{
+    max-width: 250px;
+  }
 }
