@@ -5,6 +5,7 @@ body{
 header{
   margin: 0;
   padding: 0;
+  background: white;
 }
 nav h1{
 float: left;
@@ -34,16 +35,22 @@ display: none;
   Slider
 ***/
 #slider{
-background: url(img/slider-bg.jpg) no-repeat;
-background-size: cover;
-background-attachment: fixed;
-background-position: 10% 0%;
-padding: 180px 0 280px 0;
+padding: 180px 0 250px 0;
 position: relative;
+}
+#slider img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  z-index: -3;
 }
 
 #slider #slider-content{
-  /* padding-left: 20px; */
   letter-spacing: 1.5px;
   word-spacing: 2px;
   text-align: left;
@@ -51,18 +58,7 @@ position: relative;
   margin-right: 30px;
   margin-left: 30px;
   height: 300px;
-}
-#slider:before {
-content: "";
-position: absolute;
-left: 0;
-top: 0;
-bottom: 0;
-right: 0;
-width: 100%;
-height: 100%;
-background: linear-gradient(to left, #71a8c2, #1d85a5);
-opacity: 0.3;
+  z-index: 16;
 }
 #slider h1{
 font-family: 'Roboto', sans-serif;
@@ -71,7 +67,6 @@ font-size: 45px;
 line-height: 60px;
 letter-spacing: 10px;
 padding-bottom: 45px;
-/* margin-left: 45px; */
 }
 #slider p{
 font-size: 23px;
@@ -87,6 +82,7 @@ About us
 */
 #about{
 padding: 100px 0;
+background: white;
 }
 #about .block{
 width: 480px;
@@ -96,8 +92,6 @@ margin-right: 5px;
 }
 #about h3{
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-/* font-weight: 500; */
-/* line-height: 1.1; */
 color: inherit;
 padding-top: 35px;
 line-height: 27px;
@@ -109,7 +103,6 @@ padding-top: 20px;
 }
 #about .section-title {
 margin-bottom: 0px;
-/* font-size: 15px; */
 }
 #about .section-title p {
 padding-top: 20px;
@@ -137,7 +130,6 @@ font-style: italic;
 padding-bottom: 30px;
 display: inline-block;
 width: 250px;
-/* border: 1px solid red; */
 line-height: 50px;
 margin: 20px;
 }
@@ -165,27 +157,22 @@ experiences
 */
 #experiences{
 text-align: center;
-padding: 40px 0;
-background: url(img/experience-btn-bg.jpg) no-repeat;
-background-size: cover;
-background-attachment: fixed;
 padding: 70px 0px;
 position: relative;
 text-align: center;
 color: #fff;
 }
-/* #experiences:before {
-content: "";
-position: absolute;
-left: 0;
-right: 0;
-top: 0;
-bottom: 0;
-width: 100%;
-height: 100%;
-background: #190f3b;
-opacity: 0.8;
-} */
+#experiences img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(4px);
+  z-index: -1;
+}
 #experiences .block{
 margin: auto;
 line-height: 20px;
@@ -276,6 +263,14 @@ ul.nav li{
   text-decoration: underline;
 }
 
+}
+@media only screen and (max-width: 480px){
+  #slider{
+    /* padding: 100px 0; */
+  }
+  #slider #slider-content{
+    width: 200px;
+  }
 }
 @media only screen and (max-width: 480px){
   #slider{
