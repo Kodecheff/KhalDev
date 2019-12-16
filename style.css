@@ -279,9 +279,9 @@ ul.nav li{
 }
 @media only screen and (max-width: 480px){
   #slider{
-    padding: 100px 0;
+    /* padding: 100px 0; */
   }
   #slider #slider-content{
-    max-width: 250px;
+    width: 250px;
   }
 }
