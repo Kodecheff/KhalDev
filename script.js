@@ -22,3 +22,27 @@ function changeContent(){
 }
 
 setInterval(changeContent, 3000);
+
+
+// Set the contact slider
+var contactSlider = document.getElementById("contactSlider");
+var arrayContactSlider = [
+    `<img src="img/contact-slide2.jpg">
+    <div class="contact-slider-content">
+    </div>`,
+    `<img src="img/contact-slide1.jpeg">
+    <div class="contact-slider-content" id="contactSlider">
+    </div>`
+];
+ contactSliderIndex = 0;
+
+function changeContactSlider() {
+    contactSlider.innerHTML = (arrayContactSlider[contactSliderIndex]);
+    contactSliderIndex++;
+
+    if(contactSliderIndex >= arrayContactSlider.length){
+        contactSliderIndex = 0;
+    }
+}
+
+setInterval (changeContactSlider, 2000);
