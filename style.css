@@ -285,6 +285,7 @@ cursor: pointer;
   outline: none;
   font-style: italic;
   border: 1px solid rgb(155, 156, 156);
+  width: 300px;
 }
 .contact-form form textarea{
   resize: none;
@@ -301,8 +302,14 @@ cursor: pointer;
   color: rgb(70, 142, 201);
   border-radius: 10px;
   outline: none;
+  padding: 12px;
+  font: bolder;
+  font-size: 15px;
 }
-
+.contact-form form input[type="submit"]:hover{
+  background: rgb(70, 142, 201);
+  color: white;
+}
 
 
 
@@ -388,5 +395,11 @@ ul.nav li{
   }
   .contact-form form textarea{
     width: 280px;
+  }
+  .contact-form form input{
+    width: 280px;
+  }
+  .contact-form form input[type="submit"]{
+    width: 200px;
   }
 }
