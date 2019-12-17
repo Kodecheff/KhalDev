@@ -1,4 +1,6 @@
-body{
+@import url(bootstrap.css);
+
+ody{
   margin: 0;
   padding: 0;
 }
@@ -9,7 +11,7 @@ header{
 }
 nav h1{
 float: left;
-margin: 35px;
+margin: 20px;
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-weight: 500;
 line-height: 1.1;
@@ -21,7 +23,7 @@ ul.nav{
 }
 ul.nav li{
   display: inline-block;
-  margin: 50px;
+  margin: 20px;
   cursor: pointer;
 }
 nav::after{
@@ -312,7 +314,51 @@ cursor: pointer;
 }
 
 
+/*******------------
+      DEVELOPERS PAGE
+---------*********/
+header#developer{
+  box-shadow: 0 5px 6px rgba(214, 212, 212, 0.4);
+}
 
+.developer{
+  padding: 180px 0;
+}
+.developer fieldset {
+  padding: 10px 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid black;
+  text-align: center;
+}
+.developer legend{
+  text-align: center;
+}
+.developer legend h1{
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin: auto;
+}
+.developer fieldset .row{
+  border: 1px solid rgba(214, 212, 212, 0.4);
+  line-height: 30px;
+  width: 200px;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 20px;
+}
+.developer img{
+  width: 100%;
+  height: 250px;
+  display: inline-block;
+  border-radius: 20px;
+}
+.developer fieldset .row:hover{
+  box-shadow: -3px 7px 6px rgba(0, 0, 0, 0.3);
+}
 
 
 
@@ -327,7 +373,7 @@ cursor: pointer;
 .drop-content{
   display:none;
   position:absolute;
-  width:120px;
+  width:140px;
   z-index: 1;
   color: #fff;
   background: #322e40;
@@ -375,7 +421,7 @@ ul.nav li{
 }
 @media screen and (max-width: 480px) {
   #slider h1{
-    font-size: 33px;
+    font-size: 26px;
   }
   #slider #slider-content{
     margin-left: 5px;
