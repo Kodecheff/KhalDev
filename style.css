@@ -374,7 +374,6 @@ header#developer{
 
 .work-slider{
   padding: 140px 0px;
-  position: relative;
   background: linear-gradient(to right, #484553, rgb(93, 86, 116), rgb(127, 115, 161))
 }
 /* .work-slider img{
@@ -408,33 +407,23 @@ header#developer{
 .project-categories ul{
   list-style: none;
   margin: auto;
-  /* border: 1px solid rgb(145, 143, 143); */
+  border: 1px solid rgb(145, 143, 143);
   width: 500px;
   /* padding: 10px; */
 }
 .project-categories ul li{
-  float: left;
   display: inline-block;
   font-size: 15px;
-  border: 1px solid black;
   font-weight: bolder;
   padding: 10px;
   margin: 0;
   padding-left: 25px;
   padding-right: 25px;
-  border-right: none;
-  border-left: none;
 }
 .project-categories ul li::after{
   clear: both;
 }
-.project-categories ul li.everything{
-  border-left: 1px solid;
-}
-.project-categories ul li.graphic-design{
-  border-right: 1px solid;
-}
-.project-categories ul li.everything:before{
+/* .project-categories ul li.everything:before{
   content: "\f0d7";
     position: absolute;
     font-family: 'FontAwesome';
@@ -452,15 +441,11 @@ header#developer{
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-}
+} */
 .project-categories ul li:hover{
   color: #4A4656;
   cursor: pointer;
 }
-.project-categories ul li.everything:hover{
-  
-}
-
 
 
 
@@ -520,7 +505,28 @@ ul.nav li{
   margin: auto;
   text-shadow: 0 0 3px rgb(103, 166, 238), 0 0 5px #0000FF;
 }
+/* work page */
+.work-slider h1{
+  font-size: 26px;
+  width: 250px;
 }
+.projects{
+  padding: 100px 0;
+}
+.project-categories ul{
+  width: 350px;
+  padding: 10px;
+  border: none;
+}
+.project-categories ul li{
+  display: inline;
+  font-size: 10px;
+  margin: 0;
+}
+}
+
+
+
 @media screen and (max-width: 480px) {
   #slider h1{
     font-size: 26px;
